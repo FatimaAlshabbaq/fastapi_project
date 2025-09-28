@@ -1,7 +1,7 @@
 # fastapi_project
 
 ## Overview
-This is a small FastAPI project demonstrating:
+This is a small FastAPI project :
 - 3 API routes
 - Helper functions separated from routes
 - 9+ automated tests (unit tests)
