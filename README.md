@@ -1,9 +1,5 @@
 # fastapi_project
 
-Here’s a ready-to-use README.md for your FastAPI project:
-
-
-
 ## Overview
 This is a small FastAPI project demonstrating:
 - 3 API routes
@@ -42,35 +38,31 @@ Activate virtual environment:
 source venv/bin/activate
 # Windows
 venv\Scripts\activate
-
-Install dependencies:
-
+```
+## Install dependencies:
+```bash
 pip install -r requirements.txt
+```
+## Start server:
+	```bash
+	uvicorn app.main:app --reload
+	```
+	Open browser at http://127.0.0.1:8000/docs to see Swagger UI.
 
-Start server:
+## Running Tests
+	```bash
+	pytest
+	```
 
-uvicorn app.main:app --reload
+	All tests target helper functions to avoid using TestClient.
 
-Open browser at http://127.0.0.1:8000/docs to see Swagger UI.
-
-Running Tests
-
-pytest
-
-All tests target helper functions to avoid using TestClient.
-
-CI with GitHub Actions
+## CI with GitHub Actions
 	•	Tests run automatically on every push or pull request to main.
 	•	Workflow file: .github/workflows/test.yml
 
-Proof
+	![CI Test Passing Screenshot] https://i.postimg.cc/t4KSsB10/pythontesr.png
 
-![CI Test Passing Screenshot] https://i.postimg.cc/t4KSsB10/pythontesr.png
-
-Notes
+## Notes
 	•	Logic is separated into helpers.py to allow unit testing without API calls.
 	•	Routes just call helper functions.
 
-You can save this as `README.md` and later replace `actions-proof.png` with an actual screenshot of your workflow run.  
-
-Do you want me to create a **ready folder structure with all files** for copy-paste?
