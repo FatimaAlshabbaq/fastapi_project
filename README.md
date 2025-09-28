@@ -7,6 +7,14 @@ This is a small FastAPI project :
 - 9+ automated tests (unit tests)
 - GitHub Actions CI for test automation
 
+## Technologies Used
+- *Python 3.11* – Programming language
+- *FastAPI* – Web framework for API development
+- *Uvicorn* – ASGI server to run FastAPI
+- *Pytest* – Testing framework
+- *HTTPX* – Optional, for making HTTP requests in tests
+- *GitHub Actions* – CI/CD to automatically run tests on commit or PR
+
 
 ## API Routes
 1. **GET /hello** – Returns `{"message": "Hello, World!"}`  
